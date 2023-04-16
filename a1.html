@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+    
+    footer {
+      background-color: #f2f2f2;
+      padding: 25px;
+    }
+    
+  .carousel-inner img {
+      width: 100%; /* Set width to 100% */
+      margin: auto;
+      min-height:200px;
+  }
+
+  @media (max-width: 600px) {
+    .carousel-caption {
+      display: none; 
+    }
+  }
+
+ {
+  box-sizing: border-box;
+}
+
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+  height: 300px;
+}
+
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+  height: 300px; 
+}
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/*h1{
+   font-family: 'Aclonica';font-size: 22px;
+}
+*/
+.navbar{
+  margin-bottom: 0;
+  margin-bottom: 0;
+  background-color: gray;
+}
+ 
+h1{
+      font-family: 'Allan'
+}
+
+ h2{
+    background-color: lightgray;
+    font-family: Franklin Gothi;
+   font-family: 'Aclonica';font-size: 45px;
+  }
+  
+  h3{
+
+    color: white;
+      }
+  hr{
+        border-radius: px;
+        color: darkred;
+      }
+*/
+
+
+{
+  font-family: Verdana, sans-serif;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.row > .column {
+  padding: 0 8px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column {
+  float: left;
+  width: 25%;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+}
+
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  width: 90%;
+  max-width: 1200px;
+}
+
+
+.close {
+  color: white;
+  position: absolute;
+  top: 15px;
+  right: 30px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.mySlides {
+  display: none;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+img {
+  margin-bottom: -4px;
+}
+
+.caption-container {
+  text-align: center;
+  background-color: black;
+  padding: 2px 16px;
+  color: white;
+}
+
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+img.hover-shadow {
+  transition: 0.3s;
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+img {
+  border: 1px solid ;
+  border-radius: 4px;
+  padding: 5px;
+  width: 150px;
+}
+
+img:hover {
+  box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+
+ 
+
+</style>
+</head>
+<body>
+
+  <nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href=""></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li clas="nav-item"><a href="#" class="nav-link" class="dropdown" class="nav-item">Home</a>
+           <div class="dropdown-menu " >
+              <a href="#" class="dropdown-item text-light"> </a>
+
+          </div>
+        </li>
+        <li class="nav-item"><a href="#" class="nav-link" data-toogle="dropdown" class="nav-item">About</a>
+           <div class="dropdown-menu " >
+              <a href="#" class="dropdown-item text-light"> </a>
+          </div>
+       </li>
+       <li class="nav-item"><a href="#" class="nav-link" data-toggle="dropdown">Projects</a>
+          <div class="dropdown-menu">
+            <a href="#" class=" text-muted "> Sumer Tour<br> Rainyseason TOur <br>Winter Tour<br> newMaried Couple<br></a>
+          </div>
+        </li>  
+        
+        <li class="nav-item"><a href="#" class="nav-link" data-toggle="dropdown" class="nav-item" bg-darkS >Contacts</a>
+        <div class="dropdown-menu bg-dark">
+          <a href="#" class="dropdown-item text-muted">Aniket Domble<br>con:-9623239143 <br> Vishal Domble<br>con:-8380929143 <br> Sahil Mora<br>9685962314</a>
+        </div>
+
+        <li class="nav-item"><a href="#" class="nav-link" data-toggle="dropdown" class="nav-item"> Package</a>
+        <div class="dropdown-menu bg-dark">
+          <a href="#" class="dropdown-item text-muted">Familay pack=55,000<br>Coupla pack=50,000<br>Collage Tour=85,000 <br> mine pack=35,000 <br></a>
+        </div>
+        <li class="nav-item"><a href="#" class="nav-link" data-toggle="dropdown" class="nav-item" >branch</a>
+        <div class="dropdown-menu bg-dark">
+          <a href="#" class="dropdown-item text-muted" >Mnmbai<br>puna<br>Akola<br>Amravti <br>Nagpur</a>
+        </div>
+      </li>
+      </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+  
+<marquee width="100%" direction="right" height="20px">
+The Largest & Famous Tour & Travel Company
+</marquee>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<hr>
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+          <li data-target="#myCarousel" data-slide-to="3"></li>
+            <li data-target="#myCarousel" data-slide-to="4"></li>
+              <li data-target="#myCarousel" data-slide-to="5"></li>
+                <li data-target="#myCarousel" data-slide-to="6"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <img src="C:\Users\HP\Downloads\1614939333_11_(1).jpg.jpg" alt="Image">
+        <div class="carousel-caption">
+          <h3>Tour & Travel <br>Company</h3>
+        </div>      
+      </div>
+
+      <div class="item">
+        <img src="C:\Users\HP\Downloads\place-to-visit-in-kerala-scaled.jpg" alt="Image">
+        <div class="carousel-caption">
+          <h3>Tour & Travel</h3>
+        
+        </div>      
+      </div>
+          <div class="item">
+        <img src="C:\Users\HP\Downloads\maxresdefault.jpg"alt="Image">
+        <div class="carousel-caption">
+          <h3>Tour & Travel</h3>
+         
+        </div>      
+      </div>
+         <div class="item">
+        <img src="C:\Users\HP\Downloads\maldives-1.jpg" alt="Image">
+        <div class="carousel-caption">
+          <h3>Tour & Travel</h3>
+      
+        </div>      
+      </div>
+        <div class="item">
+        <img src="C:\Users\HP\Downloads\Kashmir.jpg" alt="Image">
+        <div class="carousel-caption">
+          <h3>Tour & Travel</h3>
+          
+        </div>      
+      </div>
+   <div class="item">
+        <img src="C:\Users\HP\Downloads\61027568766b9-10_Places_To_Visit_In_Rajasthan.jpg" alt="Image">
+        <div class="carousel-caption">
+          <h3>Tour & Travel</h3>
+        
+        </div>      
+      </div>
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+</div>
+  <br>
+  
+
+
+
+ <div class="container text-center">
+  <h2>*Best Place In Ladhak*</h2>
+ 
+  <div class="row">
+    <div class="col-md-4">
+      <div class="thumbnail">
+        <a href="/w3images/lights.jpg" target="_blank">
+          
+          <img src="C:\Users\HP\Downloads\Tso-Moriri-Lake-Ladakh.jpg" alt="Lights" style="width:100%" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+          <div class="caption">
+            <p><h1>Pangong Lake</h1><br> situated at a height of almost 4,350m, is the world's highest saltwater lake. Its water, which seems to be dyed in blue, stand in stark contrast to the arid mountains surrounding it. Extending to almost 160km, one-third of the Pangong Lake lies in India and the other two-thirds in China.</p>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="thumbnail">
+        <a href="/w3images/nature.jpg" target="_blank">
+          <img src="C:\Users\HP\Downloads\photo0jpg.jpg" alt="Nature" style="width:100%"style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+          <div class="caption" >
+            <p><h1 font-family: cursive;>Zanskar River</h1> <br>Is the first major tributary of the Indus River, equal or greater in volume than the main river,[1] which flows entirely within Ladakh, India. It originates northeast of the Great Himalayan range and drains both the Himalayas and the Zanskar Range within the region of Zanskar. It flows northeast to join the Indus River near Nimo.</p>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="thumbnail">
+        <a href="/w3images/fjords.jpg" target="_blank">
+          <img src="C:\Users\HP\Downloads\Bactrian-Camel-Ride-in-Nubra-Valley-1024x576.jpg" alt="Fords" style="width:100%" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+          <div class="caption">
+            <pe><h1>Summer Ladakh</h1><br> Ladakh experiences summer season from the month of May to August when the temperature ranges from less than 5 degrees at night to a maximum of 25 degrees in daylight.
+            The warmest month is June-July when snow caps melt and tourists flock to Ladakh to enjoy the spectacular natural beauty of this region</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="container text-center">
+  <h2>*Best Place In Karal*</h2>
+
+  <div class="row">
+    <div class="col-md-3">
+      <div class="thumbnail">
+        <a href="/w3images/lights.jpg" target="_blank">
+          <a target="_blank" href="img_forest.jpg">
+          <img src="C:\Users\HP\Downloads\download (2).jpg" alt="Nature" style="width:100%">
+          <div class="caption">
+            <p><h1>Tangasseri Lighthouse </h1> Thangassery Lighthouse is situated at Tangasseri in Kollam city of the Indian state of Kerala.[2][3] It is one of the two lighthouses in the Kollam Metropolitan Area and is maintained by the Cochin Directorate General of Lighthouses and Lightships.[4][5] In operation since 1902,[6] the cylindrical lighthouse tower painted with white and red oblique bands has a height of 41 metres (135 ft), making it the second tallest lighthouse in Kerala coast.[7] Tangasseri Lighthouse is one of the most visited lighthouses in Kerala.</p>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="thumbnail">
+        <a href="/w3images/nature.jpg" target="_blank">
+          <img src="C:\Users\HP\Downloads\photo-1593693397690-362cb9666fc2.jpg" alt="Nature" style="width:100%">
+          <div class="caption" >
+            <p><h1>Alappuzha </h1>The Alappuzha was home to the Punnapra-Vayalar uprising against the Separate American Model independent Travancore proposal and also the revolt against the Feudal raj. Over 200 Communist party members were killed by the army of the Diwan at Punnapra.[11] Coir is the most important commodity manufactured in Alappuzha.[12] The Coir Board was established by the Central Government under the provisions of the Coir Industry Act, 1955. A Central Coir Research Institute is located at Kalavoor</p>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="thumbnail">
+        <a href="/w3images/nature.jpg" target="_blank">
+          <img src="C:\Users\HP\Downloads\Kerala_Athirapally_Waterfall.jpg" alt="Nature" style="width:100%">
+          <div class="caption" >
+            <p><h1>Munnar WaterFalls</h1>in Kerala is blessed with several destinations which are capable enough to make your journey most memmorable. Among them, the majestic waterfalls of Munnar stand unique with its pristine beauty and attractiveness. Some of the famous waterfalls of Munnar are Lakkam waterfalls, Attukal waterfalls, Nyayamakad waterfalls, Chinnakkal waterfalls, Kuthumkal waterfalls, Cheeyappara waterfalls, Valara waterfalls and Thoovanam waterfalls.
+
+</p>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="thumbnail">
+        <a href="/w3images/fjords.jpg" target="_blank">
+          <img src="C:\Users\HP\Downloads\varkala-tourist-place4.jpg" alt="Fjords" style="width:100%">
+          <div class="caption">
+            <pe><h1>Varkala Beach</h1>Is also known as Papanasham Beach is a beach situated in Varkala Town of Varkala Municipality in Thiruvananthapuram district, Kerala, India. The beach skirts the Arabian Sea, part of the Indian Ocean.Beautiful beach with stunning views especially the cliff view. It is really beautiful.There are lots of seafood restaurants which offers beach views and also there are many crafts shop near to the cliff.The beach has clear water and is very neat.Although the place is crowded most of the times. </p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</div><hr>
+<div class="container text-center">
+  <h2>*Best Place In Uttarakhand*</h2>
+
+ <div class="row">
+    <div class="col-md-4">
+      <div class="thumbnail">
+        <a href="/w3images/lights.jpg" target="_blank">
+          <img src="C:\Users\HP\Downloads\HARIDWAR.jpg" alt="Fords" style="width:100%" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+          <div class="caption">
+            <p><h1>Haridwar Tourism</h1>
+Haridwar is one of the seven holiest cities in India, situated in Uttarakhand. It is located where the sacred river Ganga enters the Indo-Gangetic plains for the first time. Dotted with temples, ashrams and narrow lanes across the city, Haridwar is a famous Hindu temple town where millions of devotees come to take a dip in the holy Ganges. It's believed that taking a dip in the sacred Har Ki Pauri relieves one of all the sins.   </p>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="thumbnail">
+        <a href="/w3images/nature.jpg" target="_blank">
+          <img src="C:\Users\HP\Downloads\Nainital.jpg" alt="Fords" style="width:100%" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+          <div class="caption" >
+            <p><h1 >Nainital Tourism</h1> <br> Nainital Tourism
+Nainital is a charming hill station located at the foothills of the Kumaon ranges in Uttarakhand. Located close to Dehradun and Delhi, it is the most visited hill station in North India. Nainital is a perfect weekend getaway from Delhi and the nearby places.
+
+Nainital experiences a pleasant climate throughout the year, making it a popular hill station for families, couples and even solo travellers.</p>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="thumbnail">
+        <a href="/w3images/fjords.jpg" target="_blank">
+          <img src="C:\Users\HP\Downloads\WhatsApp Image 2023-04-08 at 9.58.13 AM.jpeg" alt="Fords" style="width:100%" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+          <div class="caption">
+            <pe><h1>Valley of Flowers </h1>Tourism
+Valley of Flowers is located in Chamoli district (near Badrinath) of Uttarakhand, approximately 300 km to the north of Rishikesh.  Valley of flowers is a World Heritage Site for its wild untamed blooms surrounded by white peaks. It is open from June to September every year.At the meeting point of the Himalayan ranges, Zanskar and Western and Eastern Himalayas, the valley of flowers discovered by Mountaineer  </p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+<hr>
+<div class="container text-center">
+  <h2>*Best Place In Maldives*</h2>
+
+  <div class="row">
+    <div class="col-md-3">
+      <div class="thumbnail">
+        <a href="/w3images/lights.jpg" target="_blank">
+          <img src="C:\Users\HP\Downloads\enjoy-the-housereef-with.jpg" alt="Lights" style="width:100%">
+          <div class="caption">
+            <p><h1>Reethi Beach </h1>Reethi Beach Resort is located on the beautiful and lush Fonimagoodhoo Island, surrounded by a beautiful lagoon and white, sandy beach. It offers a fitness center, a massage parlor and a spa and wellness center. It features 5 restaurants and 5 bars. WiFi is provided in some public areas.</p>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="thumbnail">
+        <a href="/w3images/nature.jpg" target="_blank">
+          <img src="C:\Users\HP\Downloads\main-pool.jpg" alt="Nature" style="width:100%">
+          <div class="caption" >
+            <p><h1>The Villa Nautic</h1>Our Villa Nautica is located N 42.669418 E 18 075488 E, 5 km NW from Dubrovnik historical center, direct on the coast, 25 meters from the sea where we have our private terraced beach with shaders, stairs to the sea and deck chairs. Next to it is our private dock with mooring for three boats size up to 15 meters, as well as slipway for the boats up to 10 meters and dinghies.</p>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="thumbnail">
+        <a href="/w3images/nature.jpg" target="_blank">
+          <img src="C:\Users\HP\Downloads\beach-club.jpg" alt="Nature" style="width:100%">
+          <div class="caption" >
+            <p><h1>Kandima Maldiv</h1>in Kerala is blessed with several destinations which are capable enough to make your journey most memmorable. Among them, the majestic waterfalls of Munnar stand unique with its pristine beauty and attractiveness. Some of the famous waterfalls of Munnar are Lakkam waterfalls, Attukal waterfalls, Nyayamakad waterfalls, Chinnakkal waterfalls, Kuthumkal waterfalls.</p>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="thumbnail">
+        <a href="/w3images/fjords.jpg" target="_blank">
+          <img src="C:\Users\HP\Downloads\WhatsApp Image 2023-04-08 at 10.24.45 AM.jpeg" alt="Fjords" style="width:100%">
+          <div class="caption">
+            <p><h1>The Bali</h1> Indonesia’s most famous island, is located to the west of Java in the Lesser Sunda Islands surrounded by Indian Sea and Bali Sea. It is world-renowned for its scenic rice terraces, fragrant cuisine, stunning beaches and a galore of culture and tradition. With its elaborate temples, endless coastline, some of the world's best coral reefs. </p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container my-5">
+  <!-- Footer -->
+  <footer
+          class="text-center text-lg-start text-dark"
+          style="background-color: #ECEFF1" width="50"        >
+
+    <section
+             class="d-flex justify-content-between p-4 text-white"
+             style="background-color: #21D192"
+             >
+
+      <div class="me-5">
+        <span>Get connected with us on social networks:</span>
+      </div>
+            <div>
+        <a href="" class="text-white me-4">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="" class="text-white me-4">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="" class="text-white me-4">
+          <i class="fab fa-google"></i>
+        </a>
+        <a href="" class="text-white me-4">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="" class="text-white me-4">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="" class="text-white me-4">
+          <i class="fab fa-github"></i>
+        </a>
+      </div>
+     
+    </section>
+   
+    <section class="">
+      <div class="container text-center text-md-start mt-5">
+       
+        <div class="row mt-3">
+         
+          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+            
+            <h6 class="text-uppercase fw-bold">Company name <br> <h4>The Road To Travel </h4></h6>
+            <hr
+                class="mb-4 mt-0 d-inline-block mx-auto"
+                style="width: 60px; background-color: #7c4dff; height: 2px"
+                />
+            <p>
+             If your company has a name that is too long, difficult to remember, or spell, it could be one of the reasons why it is not developing as quickly as you would like.
+            </p>
+          </div>
+          
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+        
+            <h6 class="text-uppercase fw-bold">Products</h6>
+            <hr
+                class="mb-4 mt-0 d-inline-block mx-auto"
+                style="width: 60px; background-color: #7c4dff; height: 2px"
+                />
+            <p>
+              <a href="#!" class="text-dark">World visit Center</a>
+            </p>
+            <p>
+              <a href="#!" class="text-dark">Start You Journy</a>
+            </p>
+            <p>
+              <a href="#!" class="text-dark">Happy Destination</a>
+            </p>
+            <p>
+              <a href="#!" class="text-dark">Travelers Choice</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold">Useful links</h6>
+            <hr
+                class="mb-4 mt-0 d-inline-block mx-auto"
+                style="width: 60px; background-color: #7c4dff; height: 2px"
+                />
+            <p>
+              <a href="#!" class="text-dark">Your Account</a>
+            </p>
+            <p>
+              <a href="#!" class="text-dark">Become an Affiliate</a>
+            </p>
+            <p>
+              <a href="#!" class="text-dark">Shipping Rates</a>
+            </p>
+            <p>
+              <a href="#!" class="text-dark">Help</a>
+            </p>
+          </div>
+          
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold">Contact</h6>
+            <hr
+                class="mb-4 mt-0 d-inline-block mx-auto"
+                style="width: 60px; background-color: #7c4dff; height: 2px">
+            <p><i class="fas fa-home mr-3"></i> Aniket Dilip Domble</p>
+            <p><i class="fas fa-envelope mr-3"></i> Aniketdomble789gmail.com</p>
+            <p><i class="fas fa-phone mr-3"></i> + 9923659852</p>
+            <p><i class="fas fa-print mr-3"></i> + 7265986523</p>
+          </div>
+         
+        </div>
+        
+      </div>
+    </section>
+    
+    <div class="text-center text-dark p-3" style="background-color: rgba(0,0, 0, 0.2);"> -->
+    <h1>Happy Journy To All </h1>
+  
+  </div>
+   
+</footer>
+
+</body>
+</html>
